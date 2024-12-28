@@ -2,6 +2,11 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .container {
   top: 0;
   left: 0;
@@ -98,17 +103,11 @@ li > a {
   display: flex;
 }
 .GitHub {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 15px;
   padding-bottom: 0px;
 }
 .ai {
   font-size: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-weight: 2000;
 }
 div > h1 {
@@ -116,11 +115,7 @@ div > h1 {
   line-height: 80px;
 }
 .Download {
-  /* background-color: #0078d4; */
   padding-top: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 10px;
 }
 .Windows {
@@ -141,16 +136,10 @@ div > h1 {
 }
 .privacy {
   padding-bottom: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 13px;
   padding-top: 10px;
 }
 .Video {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-image: url(hero-background.webp);
   border-radius: 25px;
   padding: 57px 57px;
@@ -161,25 +150,127 @@ div > h1 {
 }
 .replay {
   font-size: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 20px;
-  margin-bottom: 40px;
 }
 .banner-options {
-  display: flex;
-  justify-content: space-around;
+  display: block;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
 }
+.post {
+  flex-direction: row;
+  gap: 48px;
+  width: 100%;
+  height: 361px;
+  padding-top: 92px;
+}
 .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
   border: 1px solid black;
-  width: 370;
-  height: 361;
+  width: 314px;
+  height: 310px;
+  border-radius: 10px;
+  background-color: #00000003;
+}
+.card-title {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 0px 0px 10px;
+  color: #242424;
+}
+.card-para {
+  color: #475569;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0px 0px 10px;
 }
 .card-img {
-  width: 335;
-  height: 198;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+.Copilot-section {
+  padding: 48px 0px;
+  margin: 0px 50px;
+}
+.banner-copilot {
+  background-image: url(copilot-free-banner-bg-light.webp);
+  background-size: cover;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px 0;
+  margin: 0px 40px;
+}
+.Copilot-text {
+  font-weight: 600;
+  left: 0;
+  padding: 0px 40px;
+}
+
+.Copilot-heading {
+  font-size: 30px;
+}
+.Copilot-para {
+  font-size: 20px;
+}
+.button {
+  border: 1px solid black;
+  background-color: #eaeaea;
+  color: #333;
+  padding: 5px 12px;
+  margin: 0px 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  align-items: center;
+}
+.features {
+  margin: 0px 90px;
+}
+.feature {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+.feature-1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 110px 0px 0px;
+  flex-grow: 1;
+}
+.feature-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0px 0px 10px 0px;
+}
+.feature-text {
+  color: #475569;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0px 0px 10px 0px;
+  line-height: 1.5;
+}
+.feature-2 {
+  flex-grow: 3;
+  padding-right: 40px;
+}
+.feature-img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 3;
+  padding: 0px 40px;
+  border-radius: 16px;
 }
